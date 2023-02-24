@@ -1,20 +1,20 @@
 /*global*/
 body{
-    font-family: Arial;
+    font-family: arial;
     color: white;
     background-color: black;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     word-spacing: 4px;
 }
 h1{
     color: white;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     padding-left: 5px;
     padding-right: 5px;
     text-transform: uppercase;
 }
-header p{color: white;}
+
 
 a{
     color: black;
@@ -22,9 +22,10 @@ a{
 
 }
 img{
-    max-width: 100%; 
+    max-width: 100%;
+    }
 
-}
+
 /*utilities*/
 
 /*nav*/
@@ -43,23 +44,27 @@ nav.menu{
     padding:10px;
 }
 .logo{
-    display:none;
+  display: none;
+  max-height: 100px;
+
+
 }
 .logo-border{
     height: 30px;
 }
 .link-login{ 
     margin-right: 20px;
+    text-transform: capitalize;
 
 }
 .link-search{
     display:none;
+    max-height: 100px;
     
 }
-.link-news-{
+.link-news{
     display: none;
 }
-
 .link-subs{
     margin-right: 20px;
     background-color: black;
@@ -69,20 +74,17 @@ nav.menu{
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 .link-menu{
     display:none;
-
-    
 }
 .link-angle{
-    display: none;
+    margin: 20px;
 }
 /*header*/
 header h1{
     text-align: center;
-     text-transform: uppercase;
-     height: 30px;
+    text-transform: uppercase;
+    height: 30px;
 }
 header p{
     text-align: center;
@@ -98,10 +100,13 @@ header.borde{
 .main-news{
     position: relative;
 }
-.main-news .img-queen{
-    height: 400px;
-    width: 100%;
-}
+.main-news .img-queen.responsive{
+    
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+ 
 .main-news-text{
     position:absolute;
     top: 150px;
@@ -119,27 +124,25 @@ header.borde{
 }
 /*secondary-news*/
 .secondary-news{
-    margin-top: 30px;
-
+    margin-top: 40px;
 }
-.secondary-news img{
-    height: 300px;
+.secondary-news.img.responsive{
     width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 .secondary-news-text{
     background-color: white;
     color: black;
     margin-top: -5px;
     margin-bottom: 20px;
-    padding: 30px;
-    
+    padding: 30px;   
 }
 .secondary-news-text h3{
     color: gray;
-
 }
 .secondary-news-text p{
-    font-size: 25px;
+    font-size: 28px;
 
 }
 .secondary-news-text .read-btn{
@@ -147,7 +150,90 @@ header.borde{
 
 }
 
+* {box-sizing:border-box}
 
-  
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
