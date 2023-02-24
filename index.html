@@ -15,55 +15,122 @@
     <nav class="menu">
         <img class="logo" src="img/ng-logo-2fl.webp" alt="este es el logo">
         <img class="logo-border" src="img/ng-border.png" alt="border">
+       
+        <div class="header">
+            
+            <div class="header-right">
+    
+            </div>
+          </div>
+
+        
+
         <a class="link-login"href="#">Login</a>
         <a class="link-search"href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a class="link-news"href="#">Newsletteres</a>
         <a class="link-subs"href="#">Suscribe</a>
         <a class="link-menu"href="#">Menu</a>
         <a class="link-angle"href="#"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
     
     </nav>
 
 
     <header>
-        <h1>Latest stories</h1>
+        <h1> Latest Stories</h1>
         <!--comentario-->
-        <p>Suscribe for full access to read stories from National Geographic.</p>
+        <p> Suscribe for full access to read stories from National Geographic</p>
         <div class="borde"></div>
-    </header>  
-       
-    <main>
-        <div>
-            <div class="main-news">
-                <img class="img-queen" src="img/Queen Elizabeth.avif" alt="queen">
-                <div class="main-news-text">
-                    <h3>History Magazine</h3>
-                 <p>Decoded secret letters reveal plot against Queen Elizabeth</p>
-                 <a class="read-btn" href="#"><i class="fa-solid fa-bars"></i>Read</a> 
-                </div><!--.main-news-text-->
-            <div><!--.main-news-->
 
-        <div class= "secondary-news">
+    </header>
+
+</main>
+    <div>
+        <div class="main-news">
+            <img class="img-queen" src="img/Queen Elizabeth.avif" alt="queen" class="responsive">
+            <div class="main-news-text">
+                <h3> History magazine</h3>
+                <p> Decoded secret letters reveal plot against Queen Elizabeth</p>
+                <a class="read-btn" href="#"></a><i class="fa-solid fa-bars"></i>Read</a>
+            </div><!--.main-news-text-->
+        </div><!--.main-news-->
+
+         <div class="secondary-news">
             <img class="img-slaves" src="img/slave.avif" alt="slave">
-           <div class="secondary-news-text">
-                <h3>Magazine</h3>
-                <p>America`s last slave ship stole them from home. It couldn`t steal their identities</p>
-                <a href="#"><i class="fa-solid fa-bars"></i>Read</a>
-         </div><!--div slaves-->    
+            <div class="secondary-news-text">
+            <h3>Magazine</h3>
+            <p>America`s last slave ship stole the from home. It couldn`t steal their identities.</p>
+            <a class="read-btn" href="#"> <i class="fa-solid fa-bars"></i>Read</a>
+            </div>
+         </div><!--div slaves-->
 
-         <div>
-            <img class="img-elephant" src="img/Elephant.jpg" alt="Elephant">
-                <h3>Animals</h3>
-                <p>What drives elephant poaching? it`s not greed</p>
-                <a href="#"><i class="fa-solid fa-bars"></i>Read</a>
-        </div><!--div elephant-->
+         <div class="secondary-news">
+            <img class="img-elephant" src="img/Elephant.jpg" alt="Elefante">
+         </div class="secondary-news-text">
+            <h3>Animals</h3>
+            <p>What drives elephant poaching? It`s not greed</p>
+            <a href="#"><i class="fa-solid fa-bars"></i>Read</a>
+         </div><!--div elefante-->
+    </div><!--agrupa las noticias-->
+</main>
 
-        </div><!--agrupa las noticias-->
+   <!-- Slideshow container -->
+<div class="slideshow-container">
 
-    </main>
+    <!-- Full-width images with number and caption text -->
+    <div class="img">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/img_nature_wide.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/img_mountains_wide.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/img_snow_wide.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>         
 
-
-
+  <style>
+    .footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align:left;
+    
+    }
+    </style>
+    
+    <div class="footer">
+      <p><img src="img/2fl-white.webp" alt="" class=""></p>
+      <p>Legal</p>
+      <p>Terms of Use</p>
+      <p>Privacy Policy</p>
+      <p>Your California Privacy Rights</p>
+      <p>Children's Online Privacy Policy</p>
+    </div>
+    
 </body>
 </html>
     
